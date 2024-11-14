@@ -1,0 +1,73 @@
+<!-- activity_tracking.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D4E6F6">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Track Your Activity"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Margin to reduce gap -->
+
+    <Spinner
+        android:id="@+id/activity_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/input_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter duration in seconds"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp" />  <!-- Margin to reduce gap -->
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Tracking"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"/>  <!-- Margin to separate buttons -->
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Tracking"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to maps"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tracking_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Tracking Info"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" /> <!-- Center the text -->
+</LinearLayout>
